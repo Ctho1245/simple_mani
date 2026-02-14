@@ -10,7 +10,7 @@
 
   <style>
     :root {
-      --bg1: #ead1dc;
+      --bg1: #ffb7c5;
       --bg2: #ffeef6;
       --card: #ffffffcc;
       --yes: #ff3b7a;
@@ -133,43 +133,58 @@
   <canvas id="confettiCanvas"></canvas>
 
   <main class="card">
-    <!-- ANIMAL WITH HEART -->
-    <svg class="art" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="fur" x1="0" x2="1">
-          <stop offset="0" stop-color="#f7c7a1"/>
-          <stop offset="1" stop-color="#f2a97b"/>
-        </linearGradient>
-        <linearGradient id="heart" x1="0" x2="1">
-          <stop offset="0" stop-color="#ff4d7d"/>
-          <stop offset="1" stop-color="#ff1f68"/>
-        </linearGradient>
-      </defs>
+  <!-- PANDA WITH HEART -->
+  <svg class="art" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
 
-      <path d="M250 50 C250 33 270 25 282 38
-               C294 25 314 33 314 50
-               C314 78 282 92 282 106
-               C282 92 250 78 250 50Z"
-            fill="url(#heart)"/>
+    <!-- Heart -->
+    <defs>
+      <linearGradient id="heart" x1="0" x2="1">
+        <stop offset="0" stop-color="#ff4d4d"/>
+        <stop offset="1" stop-color="#ff0000"/>
+      </linearGradient>
+    </defs>
 
-      <path d="M90 120 C90 70 140 40 190 60
-               C240 40 290 70 290 120
-               C290 180 240 210 190 210
-               C140 210 90 180 90 120Z"
-            fill="url(#fur)"/>
+    <path d="M160 185
+             C160 170 140 160 125 175
+             C110 160 90 170 90 190
+             C90 215 125 225 125 235
+             C125 225 160 215 160 190Z"
+          fill="url(#heart)"/>
 
-      <path d="M110 92 L95 55 L140 78 Z" fill="#f2a97b"/>
-      <path d="M270 92 L285 55 L240 78 Z" fill="#f2a97b"/>
+    <!-- Ears -->
+    <circle cx="115" cy="55" r="30" fill="black"/>
+    <circle cx="205" cy="55" r="30" fill="black"/>
 
-      <circle cx="160" cy="130" r="8"/>
-      <circle cx="220" cy="130" r="8"/>
+    <!-- Face -->
+    <circle cx="160" cy="110" r="75" fill="white" stroke="black" stroke-width="2"/>
 
-      <path d="M190 144 C186 144 182 148 182 152
-               C182 160 190 164 190 170
-               C190 164 198 160 198 152
-               C198 148 194 144 190 144Z"
-            fill="#ff7aa2"/>
-    </svg>
+    <!-- Eye patches -->
+    <ellipse cx="130" cy="105" rx="22" ry="28" fill="black"/>
+    <ellipse cx="190" cy="105" rx="22" ry="28" fill="black"/>
+
+    <!-- Eyes -->
+    <circle cx="130" cy="105" r="8" fill="white"/>
+    <circle cx="190" cy="105" r="8" fill="white"/>
+    <circle cx="125" cy="100" r="4" fill="white"/>
+    <circle cx="185" cy="100" r="4" fill="white"/>
+
+    <!-- Nose -->
+    <path d="M155 130 Q160 125 165 130 Q160 138 155 130Z" fill="pink"/>
+
+    <!-- Mouth -->
+    <path d="M150 145 Q160 155 170 145"
+          stroke="black"
+          stroke-width="3"
+          fill="none"
+          stroke-linecap="round"/>
+
+    <!-- Paws -->
+    <circle cx="115" cy="180" r="30" fill="black"/>
+    <circle cx="205" cy="180" r="30" fill="black"/>
+
+  </svg>
+</main>
+
 
     <h1>Mani kutty will you be my valentine?</h1>
 
@@ -179,13 +194,13 @@
     </section>
 
     <!-- HINT -->
-    <div class="hint" id="hint">“No” seems a bit shy 😈</div>
+    <div class="hint" id="hint">“No” seems a bit shy </div>
 
     <section class="result" id="result">
-      <h2>YAY! 🎉</h2>
+      <h2> Yo quiero mucho ❤️</h2>
       <img
         class="fireworks"
-        src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ZDVsNWFmdzIzNDB6enpscGlqN3B3bWo0enk5N2ttY2NrMjZrdmtxeiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/cdNSp4L5vCU7aQrYnV/giphy.gif"
+        src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2cwOHM1dXkyazdwdnBrNHBubmI5N3E1OWp3aW1ndGgweGpvN24wNCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/RJbk1xs8d3CqtoKNdU/giphy.gif"
         alt="Fireworks"
       />
     </section>
