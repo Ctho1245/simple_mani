@@ -132,59 +132,69 @@
 <body>
   <canvas id="confettiCanvas"></canvas>
 
-  <main class="card">
-  <!-- PANDA WITH HEART -->
+<main class="card">
+  <!-- CUTE PANDA WITH HEART -->
   <svg class="art" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
 
-    <!-- Heart -->
     <defs>
-      <linearGradient id="heart" x1="0" x2="1">
-        <stop offset="0" stop-color="#ff4d4d"/>
-        <stop offset="1" stop-color="#ff0000"/>
+      <linearGradient id="heartGrad" x1="0" x2="1">
+        <stop offset="0%" stop-color="#ff3b3b"/>
+        <stop offset="100%" stop-color="#e60000"/>
       </linearGradient>
     </defs>
 
-    <path d="M160 185
-             C160 170 140 160 125 175
-             C110 160 90 170 90 190
-             C90 215 125 225 125 235
-             C125 225 160 215 160 190Z"
-          fill="url(#heart)"/>
+    <!-- HEART -->
+    <path d="M160 195
+             C160 175 135 165 125 182
+             C115 165 90 175 90 200
+             C90 225 125 235 125 245
+             C125 235 160 225 160 200Z"
+          fill="url(#heartGrad)"
+          transform="translate(35,-10) scale(1.2)"/>
 
-    <!-- Ears -->
-    <circle cx="115" cy="55" r="30" fill="black"/>
-    <circle cx="205" cy="55" r="30" fill="black"/>
+    <!-- EARS -->
+    <circle cx="110" cy="60" r="30" fill="black"/>
+    <circle cx="210" cy="60" r="30" fill="black"/>
 
-    <!-- Face -->
-    <circle cx="160" cy="110" r="75" fill="white" stroke="black" stroke-width="2"/>
+    <!-- FACE -->
+    <circle cx="160" cy="115" r="75" fill="white"/>
 
-    <!-- Eye patches -->
-    <ellipse cx="130" cy="105" rx="22" ry="28" fill="black"/>
-    <ellipse cx="190" cy="105" rx="22" ry="28" fill="black"/>
+    <!-- EYE PATCHES -->
+    <ellipse cx="130" cy="105" rx="28" ry="35" fill="black"/>
+    <ellipse cx="190" cy="105" rx="28" ry="35" fill="black"/>
 
-    <!-- Eyes -->
-    <circle cx="130" cy="105" r="8" fill="white"/>
-    <circle cx="190" cy="105" r="8" fill="white"/>
-    <circle cx="125" cy="100" r="4" fill="white"/>
-    <circle cx="185" cy="100" r="4" fill="white"/>
+    <!-- EYES -->
+    <circle cx="130" cy="105" r="10" fill="white"/>
+    <circle cx="190" cy="105" r="10" fill="white"/>
+    <circle cx="123" cy="98" r="4" fill="white"/>
+    <circle cx="183" cy="98" r="4" fill="white"/>
 
-    <!-- Nose -->
-    <path d="M155 130 Q160 125 165 130 Q160 138 155 130Z" fill="pink"/>
+    <!-- NOSE -->
+    <path d="M150 135 
+             Q160 125 170 135 
+             Q160 142 150 135Z"
+          fill="#ff9eb3"/>
 
-    <!-- Mouth -->
-    <path d="M150 145 Q160 155 170 145"
+    <!-- MOUTH -->
+    <path d="M160 140 
+             v12"
+          stroke="black"
+          stroke-width="3"
+          stroke-linecap="round"/>
+
+    <path d="M145 155 
+             Q160 170 175 155"
           stroke="black"
           stroke-width="3"
           fill="none"
           stroke-linecap="round"/>
 
-    <!-- Paws -->
-    <circle cx="115" cy="180" r="30" fill="black"/>
-    <circle cx="205" cy="180" r="30" fill="black"/>
+    <!-- PAWS HOLDING HEART -->
+    <circle cx="120" cy="185" r="28" fill="black"/>
+    <circle cx="200" cy="185" r="28" fill="black"/>
 
   </svg>
 </main>
-
 
     <h1>Mani kutty will you be my valentine?</h1>
 
